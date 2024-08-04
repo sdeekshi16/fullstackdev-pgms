@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <ol>
+            <li>Uppercase: {{ "hyderabad" | uppercase }}</li>
+            <li>Lowercase: {{ "INDIA" | lowercase }}</li>
+            <li>Date: {{ someDate | date:'d/M/y' }}</li> 
+            <li>Full Date: {{ someDate | date:'fullDate' }}</li> 
+            <li>Decimal: {{ 125458.369 | number:'1.2-2' }}</li> 
+            <li>Currency: {{ 12.568 | currency:'INR' }}</li> 
+            <li>JSON: {{ {id: 1, name: "sample", age: 40} | json }}</li>
+            <li>Slice (3rd to 6th): {{ [4, 45, 14, 12, 78, 89, 11, 13, 15, 17] | slice:2:6 }}</li> 
+        </ol>
+          
+    </body>
+</html>
